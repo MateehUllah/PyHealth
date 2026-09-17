@@ -25,6 +25,14 @@ confidence levels:
 - :class:`~pyhealth.calib.predictionset.ClusterLabel`: K-means cluster-based conformal prediction
 - :class:`~pyhealth.calib.predictionset.NeighborhoodLabel`: Neighborhood Conformal Prediction (NCP)
 
+SCRIB backend behavior
+~~~~~~~~~~~~~~~~~~~~~~
+
+SCRIB uses an optional Cython QuickSearch backend for faster threshold search. If the
+optional Cython support cannot be imported, PyHealth falls back to the Python
+implementation and prints a performance warning. Exceptions unrelated to importing the
+optional backend are surfaced instead of being silently treated as a fallback.
+
 Getting Started
 ---------------
 
