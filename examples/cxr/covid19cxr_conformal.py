@@ -10,7 +10,8 @@ This example demonstrates:
 For class-specific risk control instead of the marginal/class-conditional
 mis-coverage guarantees LABEL and CovariateLabel provide, see
 pyhealth.calib.predictionset.SCRIB, which minimizes ambiguity subject to
-per-class risk targets (see its docstring for usage).
+per-class risk targets (see its docstring for usage). SCRIB uses its Python
+QuickSearch implementation when the optional Cython backend cannot be imported.
 """
 
 import numpy as np
